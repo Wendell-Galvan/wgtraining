@@ -1,14 +1,62 @@
+import { useState, useRef } from "react";
+import emailjs from "emailjs-com";
+
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      name,
+      email,
+      message,
+    };
+
+    emailjs
+      .sendForm(
+        "service_7vzjejp",
+        "template_4ugpe29",
+        form.current,
+        "iysjws0MNMB5d17JM",
+        templateParams
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert(
+            "Thank you for reaching out! I will contact you as soon as I receive your message."
+          );
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    //clear form fields
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
-    <div id="contact" className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <div
+      id="contact"
+      className="h-screen py-8 lg:py-16 px-4 mx-auto max-w-screen-md"
+    >
       <h2 className="mb-4 text-2xl tracking-tight text-center ">Contact Me</h2>
-      <form className="space-y-8">
+      <form ref={form} onSubmit={sendEmail} className="space-y-8">
         <div>
           <label className="block mb-2 text-sm font-medium">Name</label>
           <input
             type="text"
             name="user_name"
             placeholder="Wendell Galvan"
+            onChange={(event) => setName(event.target.value)}
             className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           />
         </div>
@@ -18,6 +66,7 @@ const Contact = () => {
             type="email"
             name="user_email"
             placeholder="name@gmail.com"
+            onChange={(event) => setEmail(event.target.value)}
             className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 "
           />
         </div>
@@ -27,6 +76,7 @@ const Contact = () => {
             name="message"
             rows="6"
             placeholder="Let's connect..."
+            onChange={(event) => setMessage(event.target.value)}
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
           />
         </div>
