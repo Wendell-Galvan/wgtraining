@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "emailjs-com";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -46,7 +47,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="h-screen py-8 lg:py-16 px-4 mx-auto max-w-screen-md"
+      className="h-screen py-8 lg:pt-24 px-4 mx-auto max-w-screen-md"
     >
       <h2 className="mb-4 text-2xl tracking-tight text-center ">Contact Me</h2>
       <form ref={form} onSubmit={sendEmail} className="space-y-8">
@@ -55,7 +56,7 @@ const Contact = () => {
           <input
             type="text"
             name="user_name"
-            placeholder="Wendell Galvan"
+            placeholder="Your name"
             onChange={(event) => setName(event.target.value)}
             className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           />
@@ -87,6 +88,19 @@ const Contact = () => {
           Send Message
         </button>
       </form>
+      <div className="flex items-center justify-center text-4xl mt-12 mb-8">
+        <a
+          href="https://www.facebook.com/profile.php?id=61552441323706"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 bg-white"
+        >
+          <FaFacebookSquare />
+        </a>
+      </div>
+      <div className="flex justify-center text-white">
+        Copyright © 2023 Wendell Galvan
+      </div>
     </div>
   );
 };

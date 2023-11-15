@@ -4,14 +4,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Slideshow = () => {
   return (
-    <div className="mt-8">
+    <div className="mt-8 flex justify-center">
       <Carousel
         autoPlay
         interval={5000}
         showArrows={true}
         infiniteLoop={true}
         showThumbs={false}
-        className="w-full sm:mx-auto sm:w-1/3 bg-white"
+        className="w-2/3 sm:mx-auto sm:w-1/2 lg:w-1/3 bg-white"
       >
         <div>
           <img src="/images/review1.png" alt="Review 1" />

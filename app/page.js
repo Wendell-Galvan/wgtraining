@@ -1,13 +1,22 @@
 "use client";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: "600",
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 export default function Home() {
   return (
-    <main>
+    <main className={`${poppins.variable}`}>
       <Navbar />
+      <Header />
       <About />
       <Services />
       <Contact />
