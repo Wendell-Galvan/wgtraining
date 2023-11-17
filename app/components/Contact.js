@@ -47,9 +47,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="h-screen py-8 lg:pt-24 px-4 mx-auto max-w-screen-md"
+      className="h-screen py-8 lg:pt-24 px-4 mx-auto max-w-screen-sm"
     >
-      <h2 className="mb-4 text-2xl tracking-tight text-center ">Contact Me</h2>
+      <h2 className="my-4 text-2xl tracking-tight text-center ">Contact Me</h2>
       <form ref={form} onSubmit={sendEmail} className="space-y-8">
         <div>
           <label className="block mb-2 text-sm font-medium">Name</label>
@@ -88,7 +88,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
-      <div className="flex items-center justify-center text-4xl mt-12 mb-8">
+      <div className="flex items-center justify-center text-4xl mt-12 md:mt-8 mb-8">
         <a
           href="https://www.facebook.com/profile.php?id=61552441323706"
           target="_blank"

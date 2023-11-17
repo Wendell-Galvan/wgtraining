@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Slideshow = () => {
   return (
-    <div className="mt-8 flex justify-center">
+    <div className="my-4 flex justify-center">
       <Carousel
         autoPlay
         interval={5000}
