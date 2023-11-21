@@ -11,10 +11,10 @@ const Services = () => {
         Services
       </h1>
       <div
-        className="bg-cover bg-center m-10 h-1/2"
+        className="bg-cover bg-center sm:w-1/2 lg:w-1/3 m-10 h-1/2 border-black border-4"
         style={{ backgroundImage: 'url("/images/gym1.jpg")' }}
       >
-        <ul className="p-10 flex flex-col items-center justify-center font-mono">
+        <ul className="p-10 flex flex-col items-center justify-center font-mono lg:text-xl">
           <li className="p-1 font-extrabold text-white bg-black bg-opacity-60">
             Personal Training
           </li>
@@ -27,7 +27,7 @@ const Services = () => {
           <li className="p-1 font-extrabold text-white bg-black bg-opacity-60">
             Athletic Development
           </li>
-          <li className="p-1 font-extrabold text-white bg-black bg-opacity-60">
+          <li className="pt-1 font-extrabold text-white bg-black bg-opacity-60">
             In-Home Personal Training
           </li>
         </ul>
