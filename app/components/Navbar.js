@@ -11,7 +11,7 @@ const Navbar = () => {
             width={200}
             height={100}
             alt="logo"
-            className="rounded-2xl "
+            className="rounded-2xl"
           />
         </Link>
         <div className="flex space-x-4 font-mono font-bold">

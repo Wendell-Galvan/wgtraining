@@ -57,7 +57,7 @@ const Contact = () => {
           <input
             type="text"
             name="user_name"
-            placeholder="Enter your name here"
+            placeholder="Your name"
             onChange={(event) => setName(event.target.value)}
             className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           />
@@ -106,7 +106,7 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
           title="Location"
-          className="flex hover:ring-2 hover:rounded p-1"
+          className="flex hover:text-blue-400 p-1"
         >
           <h1>Training Location</h1>
           <FaLocationDot className="text-red-500 mx-2 text-xl sm:text-3xl" />

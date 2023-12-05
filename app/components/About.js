@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex sm:items-center h-screen w-full bg-cover bg-top bg-fixed overflow-auto"
+      className="flex sm:items-center h-screen w-full bg-cover bg-top bg-fixed overflow-auto lg:overflow-hidden"
       style={{ backgroundImage: "url(/images/gym6.jpg)" }}
     >
       <div className="md:flex sm:justify-evenly">
@@ -29,7 +29,7 @@ const About = () => {
         </div>
         <div className="flex-col justify-center md:w-2/3 lg:w-1/2 p-2 md:p-10 md:pt-24 text-sm md:text-base lg:text-lg bg-black bg-opacity-80 md:bg-opacity-0 font-serif">
           <div className="flex justify-center">
-            <h1 className="text-2xl lg:text-3xl mb-8 p-2 bg-black bg-opacity-0 md:bg-opacity-80 rounded-lg font-sans">
+            <h1 className="text-2xl lg:text-3xl md:mb-8 p-2 bg-black bg-opacity-0 md:bg-opacity-80 rounded-lg font-sans">
               Personal Training Programs Catered to&nbsp;
               <span className="text-yellow-500">YOU</span>
             </h1>
@@ -59,8 +59,8 @@ const About = () => {
             physical achievements without help of the health professionals he
             had surrounding him. Wendell decided to become a Physical Therapist
             Assistant to help others get back to doing what they love. During
-            his time as a PTA he began to notice that many patients had little
-            to no experience with resistance training, which may have
+            his time as a PTA he began to notice many patients had little or no
+            recent experience with resistance training, which may have
             contributed to their pain and injuries in the first place. He
             decided to start this business to bridge that gap and provide the
             necessary tools to live a meaningful, healthy, well-rounded life.
