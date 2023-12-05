@@ -14,6 +14,9 @@ const Slideshow = () => {
         className="w-2/3 sm:mx-auto sm:w-1/2 lg:w-1/3 bg-white border-black border-2"
       >
         <div>
+          <img src="/images/review4.png" alt="Review 4" />
+        </div>
+        <div>
           <img src="/images/review1.png" alt="Review 1" />
         </div>
         <div>

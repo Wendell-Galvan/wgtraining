@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import { FaFacebookSquare, FaLocationArrow } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
