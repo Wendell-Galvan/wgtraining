@@ -20,6 +20,9 @@ export default function Home() {
       <About />
       <Services />
       <Contact />
+      <div className="flex justify-center text-white text-xs pb-6">
+        Copyright © 2023 Wendell Galvan
+      </div>
     </main>
   );
 }

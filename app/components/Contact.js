@@ -89,7 +89,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
-      <div className="flex items-center justify-center text-4xl mt-12 md:mt-8 mb-8">
+      <div className="flex items-center justify-evenly text-4xl pt-16 pb-8 md:mt-8">
         <a
           href="https://www.facebook.com/profile.php?id=61552441323706"
           target="_blank"
@@ -99,21 +99,22 @@ const Contact = () => {
         >
           <FaFacebookSquare />
         </a>
-      </div>
-      <div className="flex justify-center mb-20 text-sm sm:text-lg font-sans">
         <a
           href="https://maps.app.goo.gl/hESEYSKd2zvz9pbeA"
           target="_blank"
           rel="noopener noreferrer"
           title="Location"
-          className="flex hover:text-blue-400 p-1"
+          className="flex hover:text-blue-400 p-1 font-sans text-sm md:text-lg"
         >
           <h1>Training Location</h1>
           <FaLocationDot className="text-red-500 mx-2 text-xl sm:text-3xl" />
         </a>
-      </div>
-      <div className="flex justify-center items-end text-white text-sm">
-        Copyright © 2023 Wendell Galvan
+        <a
+          href="https://calendar.app.google/mhRPuPNwP4aApuDbA"
+          className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300"
+        >
+          Book now
+        </a>
       </div>
     </div>
   );
