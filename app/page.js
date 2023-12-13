@@ -1,6 +1,4 @@
 "use client";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import About from "./components/About";
@@ -14,15 +12,10 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <main className={`${poppins.variable}`}>
-      <Navbar />
-      <Header />
+    <div className={`${poppins.variable}`}>
       <About />
       <Services />
       <Contact />
-      <div className="flex justify-center text-white text-xs pb-6">
-        Copyright © 2023 Wendell Galvan
-      </div>
-    </main>
+    </div>
   );
 }

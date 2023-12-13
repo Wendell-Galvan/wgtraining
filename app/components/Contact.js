@@ -89,7 +89,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
-      <div className="flex items-center justify-evenly text-4xl pt-16 pb-8 md:mt-8">
+      <div className="flex items-center justify-evenly text-4xl mt-10">
         <a
           href="https://www.facebook.com/profile.php?id=61552441323706"
           target="_blank"

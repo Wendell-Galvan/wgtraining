@@ -38,9 +38,9 @@ const About = () => {
             Wendell is a Certified Functional Strength Coach, Pain-Free
             Performance Specialist, and former Physical Therapist Assistant
             (PTA). Having worked with a wide variety of pathologies, he values
-            injury-prevention and improving overall well-being by creating
-            specialized personal training programs. He is based in Monroe, WA
-            and trains clients at{" "}
+            injury-prevention and improving overall well-being in creating
+            specialized training programs. He is based in Monroe, WA and trains
+            clients at{" "}
             <a
               href="https://maps.app.goo.gl/hESEYSKd2zvz9pbeA"
               target="_blank"
@@ -55,15 +55,14 @@ const About = () => {
           <p className="bg-black bg-opacity-0 md:bg-opacity-80 rounded-lg p-2">
             Wendell is a life-long athlete and was fortunate enough to play
             football through college. His passions now include hiking, golfing,
-            and snowboarding to name a few. He would not have succeeded in his
-            physical achievements without help of the health professionals he
-            had surrounding him. Wendell decided to become a Physical Therapist
-            Assistant to help others get back to doing what they love. During
-            his time as a PTA he began to notice many patients had little or no
-            recent experience with resistance training, which may have
-            contributed to their pain and injuries in the first place. He
-            decided to start this business to bridge that gap and provide the
-            necessary tools to live a meaningful, healthy, well-rounded life.
+            and snowboarding to name a few. Wendell decided to become a Physical
+            Therapist Assistant to help others get back to being active and
+            doing what they love. During his time as a PTA he began to notice
+            some patients had little or no recent experience with resistance
+            training, which may have contributed to their pain and injuries in
+            the first place. He decided to start this business to bridge that
+            gap and provide the necessary tools to live a meaningful, healthy,
+            well-rounded life.
           </p>
         </div>
       </div>

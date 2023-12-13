@@ -1,11 +1,18 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: "600",
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 const Header = () => {
   return (
-    <div className="h-1/2 flex justify-center items-start max-w-screen md:pt-5 bg-gradient-to-r from-yellow-500 to-green-800">
-      <div className="flex justify-center">
-        <h1 className="text-xl md:text-7xl text-black font-black font-sans">
+    <div className="flex justify-center">
+      <div className={` ${poppins.className} flex justify-center`}>
+        <h1 className="text-xl md:text-5xl text-black font-black font-sans">
           Train for&nbsp;
           <TypeAnimation
             sequence={[
