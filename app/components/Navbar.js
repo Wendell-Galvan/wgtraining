@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-yellow-500 to-green-800 w-full py-2 sticky top-0 z-30">
       <div className="flex items-center justify-between mx-4 max-w-screen-xl">
-        <Link href="/" className="w-1/5">
+        <Link href="/" className="w-1/4 md:w-1/5">
           <Image
             src="/images/logo.png"
             width={200}
