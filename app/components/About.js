@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex sm:items-center h-screen w-full bg-cover bg-top bg-fixed overflow-auto lg:overflow-hidden"
+      className="flex sm:items-center h-full w-full bg-cover bg-top bg-fixed overflow-auto lg:overflow-hidden"
       style={{ backgroundImage: "url(/images/gym6.jpg)" }}
     >
       <div className="md:flex sm:justify-evenly">

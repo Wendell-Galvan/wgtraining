@@ -5,13 +5,13 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="h-screen lg:h-full pt-10 md:pt-20 flex flex-col items-center bg-gradient-to-r from-yellow-500 to-green-800"
+      className="h-full lg:h-full pt-10 md:pt-20 flex flex-col items-center bg-gradient-to-r from-yellow-500 to-green-800"
     >
       <h1 className="flex flex-col items-center text-4xl font-bold font-sans text-black">
         Services
       </h1>
       <div
-        className="h-1/2 lg:h-full bg-cover bg-center my-10 border-black border-2"
+        className="bg-cover bg-center my-10 pb-12 border-black border-2"
         style={{ backgroundImage: 'url("/images/gym1.jpg")' }}
       >
         <ul className="p-5 flex flex-col items-center font-mono lg:text-base text-white font-extrabold">
